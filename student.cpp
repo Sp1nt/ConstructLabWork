@@ -4,8 +4,8 @@ using namespace std;
 class Student
 {
     char* name;
-    char* email;
     int age;
+    char* email;
 public:
     Student()
     {
@@ -37,7 +37,7 @@ public:
         cin >> buff;
         if (name != nullptr)
         {
-            cout << "Delete -> " << name << "." << endl;
+            cout << "Delete -> " << name  << endl;
             delete[]name;
         }
         name = new char[strlen(buff) + 1];
@@ -53,7 +53,7 @@ public:
         cin >> buff;
         if (name != nullptr)
         {
-            cout << "Delete -> " << name << "." << endl;
+            cout << "Delete -> " << name  << endl;
             delete[]name;
         }
         name = new char[strlen(buff) + 1];
@@ -67,7 +67,7 @@ public:
 
         if (email != nullptr)
         {
-            cout << "Delete -> " << name << "." << endl;
+            cout << "Delete -> " << name << endl;
             delete[]email;
         }
 
