@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 class Student
 {
     char* name;
@@ -34,7 +33,7 @@ public:
     void Input()
     {
         char buff[20];
-        cout << "Enter name: ";
+        cout << "Input name: ";
         cin >> buff;
         if (name != nullptr)
         {
@@ -44,13 +43,13 @@ public:
         name = new char[strlen(buff) + 1];
         strcpy_s(name, strlen(buff) + 1, buff);
 
-        cout << "Enter age: ";
+        cout << "Input age: ";
         cin >> age;
     }
 
     void InputTwo() {
         char buff[50];
-        cout << "Enter name: ";
+        cout << "Input name: ";
         cin >> buff;
         if (name != nullptr)
         {
@@ -60,10 +59,10 @@ public:
         name = new char[strlen(buff) + 1];
         strcpy_s(name, strlen(buff) + 1, buff);
 
-        cout << "Enter age: ";
+        cout << "Input age: ";
         cin >> age;
 
-        cout << "Enter email: ";
+        cout << "Input email: ";
         cin >> buff;
 
         if (email != nullptr)
@@ -78,10 +77,10 @@ public:
 
     void Print()
     {
-        cout << "Name: " << name << "\tAge: " << age << endl;
+        cout << "Name: " << name << "\t Age: " << age << endl;
     }
     void PrintTwo() {
-        cout << "Name: " << name << "\tAge: " << age << "\temail: " << email << endl;
+        cout << "Name: " << name << "\t Age: " << age << "\t email: " << email << endl;
     }
     ~Student()
     {
